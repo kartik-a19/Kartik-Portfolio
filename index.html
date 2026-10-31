@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +11,12 @@
     <title>Kartik Arora | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="dark-mode">
 
+    <!-- NAVBAR -->
     <nav>
         <ul>
             <li><a href="#home">HOME</a></li>
@@ -21,170 +24,198 @@
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#project">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
+            <li>
+                <button id="theme-toggle" type="button">
+                    Toggle Theme
+                </button>
+            </li>
         </ul>
     </nav>
 
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
 
-    <section id="home">
+        <div class="hero-content">
 
-        <h1>Hello! I am Kartik Arora.</h1>
+            <p class="hero-tag">WELCOME TO MY PORTFOLIO</p>
 
-        <h2>B.Tech CSE Student at Manav Rachna University</h2>
+            <h1>
+                Hi, I'm <span class="highlight">Kartik Arora</span>
+            </h1>
 
-        <p>
-            I'm a keen learner who loves to learn and explore new things.
-            My present goal is to build good projects and learn as much as I can,
-            whether it is through self-learning or from my peers.
-        </p>
+            <h2>
+                B.Tech CSE Student
+                <span class="hero-divider">|</span>
+                Aspiring Software Developer
+            </h2>
 
-        <button>View My Projects</button>
+            <p class="hero-description">
+                I'm a passionate learner exploring programming,
+                web development, and machine learning. I enjoy
+                building projects, solving problems, and turning
+                ideas into practical solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#project" class="btn btn-primary">
+                    Explore My Projects ↗
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Let's Connect
+                </a>
+
+            </div>
+
+            <p class="hero-footer">
+                <span class="status-dot"></span>
+                Learning, building, and growing every day.
+            </p>
+
+        </div>
+
+        <div class="hero-glow"></div>
 
     </section>
 
+    <!-- ABOUT SECTION -->
+    <section id="about">
 
-    
-<section id="about">
+        <h2>About Me</h2>
 
-    <h2>About Me</h2>
+        <p>
+            I am a B.Tech CSE student at Manav Rachna University,
+            passionate about programming, machine learning and
+            software development.
+        </p>
 
-    <p>
-        I am a B.Tech CSE student at Manav Rachna University,
-        passionate about programming, machine learning and
-        software development.
-    </p>
+        <p>
+            I enjoy learning new technologies, building projects
+            and improving my problem-solving skills.
+        </p>
 
-    <p>
-        I enjoy learning new technologies, building projects
-        and improving my problem-solving skills.
-    </p>
+    </section>
 
-</section>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
 
+        <h2>My Skills</h2>
 
+        <div class="skills-container">
 
+            <div class="skill">
+                <h3>Programming</h3>
+                <p>Java, Python, C</p>
+            </div>
 
-    
-<section id="skills">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
 
-    <h2>My Skills</h2>
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <p>Python, Pandas, NumPy, Scikit-learn</p>
+            </div>
 
-    <div class="skills-container">
-
-        <div class="skill">
-            <h3>Programming</h3>
-            <p>Java, Python, C</p>
-        </div>
-
-        <div class="skill">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript</p>
-        </div>
-
-        <div class="skill">
-            <h3>Machine Learning</h3>
-            <p>Python, Pandas, NumPy, Scikit-learn</p>
-        </div>
-
-        <div class="skill">
-            <h3>Database</h3>
-            <p>SQL, DBMS</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-   
-<section id="project">
-
-    <h2>My Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-
-            <h3>Plant Disease Detection</h3>
-
-            <p>
-                A machine learning project that detects plant diseases
-                from leaf images using image processing and a custom CNN.
-            </p>
-
-            <p>
-                <strong>Technologies:</strong>
-                Python, CNN, TensorFlow, Machine Learning
-            </p>
-
-            <button>View Project</button>
+            <div class="skill">
+                <h3>Database</h3>
+                <p>SQL, DBMS</p>
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="project-card">
+    <!-- PROJECTS SECTION -->
+    <section id="project">
 
-            <h3>Customer Churn Prediction</h3>
+        <h2>My Projects</h2>
 
-            <p>
-                A machine learning project that predicts whether a
-                customer is likely to leave a service.
-            </p>
+        <div class="projects-container">
 
-            <p>
-                <strong>Technologies:</strong>
-                Python, Pandas, Scikit-learn, Machine Learning
-            </p>
+            <div class="project-card">
 
-            <button>View Project</button>
+                <h3>Plant Disease Detection</h3>
+
+                <p>
+                    A machine learning project that detects plant
+                    diseases from leaf images using image processing
+                    and a custom CNN.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, CNN, TensorFlow, Machine Learning
+                </p>
+
+                <button type="button"
+                    onclick="window.open('https://github.com/kartik-a19', '_blank', 'noopener,noreferrer')">
+                    View Project
+                </button>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Customer Churn Prediction</h3>
+
+                <p>
+                    A machine learning project that predicts whether
+                    a customer is likely to leave a service.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python, Pandas, Scikit-learn, Machine Learning
+                </p>
+
+                <button type="button"
+                    onclick="window.open('https://github.com/kartik-a19', '_blank', 'noopener,noreferrer')">
+                    View Project
+                </button>
+
+            </div>
 
         </div>
 
+    </section>
 
-        
+    <!-- CONTACT SECTION -->
+    <section id="contact">
 
-           
+        <h2>Let's Connect</h2>
+
+        <p>
+            I'm always interested in learning, collaborating
+            and working on new projects.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:arorakartik913@gmail.com">
+                Email Me
+            </a>
+
+            <a href="https://github.com/kartik-a19"
+               target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/kartik-arora-683952375/"
+               target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-
-
-
-    
-<section id="contact">
-
-    <h2>Let's Connect</h2>
-
-    <p>
-        I'm always interested in learning, collaborating
-        and working on new projects.
-    </p>
-
-    <div class="contact-links">
-
-        <a href="mailto:arorakartik913@gmail.com">Email Me</a>
-
-        <a href="https://github.com/kartik-a19"
-           target="_blank" rel="noopener noreferrer">GitHub</a>
-
-        <a href="https://www.linkedin.com/in/kartik-arora-683952375/"
-           target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 Kartik Arora | Built with HTML, CSS & JavaScript</p>
-</footer>
-<button id="theme-toggle">Toggle Theme</button>
-
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Kartik Arora | Built with HTML, CSS & JavaScript</p>
+    </footer>
 
 </body>
-
 </html>
-
