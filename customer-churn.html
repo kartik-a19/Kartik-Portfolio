@@ -23,7 +23,7 @@
             <a href="index.html">← Back to Portfolio</a>
             <a href="#overview">Overview</a>
             <a href="#dataset">Dataset</a>
-            <a href="#workflow">Workflow</a>
+            <a href="#project-workflow">Project Workflow</a>
             <a href="#results">Results</a>
         </div>
     </nav>
@@ -132,86 +132,131 @@
 
         </section>
 
-<!-- PROJECT WORKFLOW -->
-<section class="churn-section" id="project-workflow">
 
-    <span class="churn-section-label">HOW IT WORKS</span>
-    <h2>Project Workflow</h2>
+        <!-- PROJECT WORKFLOW -->
+        <section class="churn-section" id="project-workflow">
 
-    <p>
-        The project follows a structured machine learning pipeline,
-        starting from raw customer data and ending with churn predictions.
-    </p>
+            <span class="churn-section-label">HOW IT WORKS</span>
+            <h2>Project Workflow</h2>
 
-    <div class="workflow-container">
+            <p>
+                The project follows a structured machine learning pipeline,
+                starting from raw customer data and ending with churn predictions.
+            </p>
 
-        <div class="workflow-step">
-            <div class="workflow-number">01</div>
-            <div class="workflow-details">
-                <h3>Dataset Collection</h3>
-                <p>Collected the Telco Customer Churn dataset containing 7,043 customer records and 21 original features.</p>
+            <div class="workflow-container">
+
+                <div class="workflow-step">
+                    <div class="workflow-number">01</div>
+                    <div class="workflow-details">
+                        <h3>Dataset Collection</h3>
+                        <p>
+                            Collected the Telco Customer Churn dataset
+                            containing 7,043 customer records and
+                            21 original features.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">02</div>
+                    <div class="workflow-details">
+                        <h3>Data Cleaning & Preprocessing</h3>
+                        <p>
+                            Converted TotalCharges into numeric format,
+                            handled 11 missing values using median
+                            imputation and checked duplicate records.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">03</div>
+                    <div class="workflow-details">
+                        <h3>Exploratory Data Analysis</h3>
+                        <p>
+                            Studied churn distribution, customer tenure,
+                            monthly charges and churn patterns across
+                            contract types using visualizations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">04</div>
+                    <div class="workflow-details">
+                        <h3>Train-Test Split</h3>
+                        <p>
+                            Divided the dataset into training and testing
+                            sets using an 80:20 stratified split, resulting
+                            in 5,634 training and 1,409 testing records.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">05</div>
+                    <div class="workflow-details">
+                        <h3>Feature Selection</h3>
+                        <p>
+                            Applied SelectKBest with mutual_info_classif
+                            to select the top 10 features from
+                            30 encoded features.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">06</div>
+                    <div class="workflow-details">
+                        <h3>Feature Scaling</h3>
+                        <p>
+                            Applied StandardScaler to the selected
+                            features. The scaler was fitted on training
+                            data and then used to transform testing data.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">07</div>
+                    <div class="workflow-details">
+                        <h3>Model Training</h3>
+                        <p>
+                            Implemented Logistic Regression,
+                            Decision Tree and Random Forest
+                            classification algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">08</div>
+                    <div class="workflow-details">
+                        <h3>Hyperparameter Tuning</h3>
+                        <p>
+                            Used GridSearchCV with 5-fold
+                            cross-validation and F1-score to
+                            identify suitable model parameters.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="workflow-number">09</div>
+                    <div class="workflow-details">
+                        <h3>Ensemble & Model Evaluation</h3>
+                        <p>
+                            Built a Soft Voting Classifier and compared
+                            model performance using accuracy, precision,
+                            recall, F1-score and confusion matrices.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
 
-        <div class="workflow-step">
-            <div class="workflow-number">02</div>
-            <div class="workflow-details">
-                <h3>Data Cleaning & Preprocessing</h3>
-                <p>Converted TotalCharges into numeric format, handled 11 missing values using median imputation and checked duplicate records.</p>
-            </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="workflow-number">03</div>
-            <div class="workflow-details">
-                <h3>Exploratory Data Analysis</h3>
-                <p>Studied churn distribution, customer tenure, monthly charges and churn patterns across contract types using visualizations.</p>
-            </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="workflow-number">04</div>
-            <div class="workflow-details">
-                <h3>Feature Selection</h3>
-                <p>Applied SelectKBest with mutual information to reduce the feature set from 30 encoded features to 10 important features.</p>
-            </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="workflow-number">05</div>
-            <div class="workflow-details">
-                <h3>Feature Scaling & Data Splitting</h3>
-                <p>Applied StandardScaler and divided the dataset into training and testing sets using an 80:20 stratified split.</p>
-            </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="workflow-number">06</div>
-            <div class="workflow-details">
-                <h3>Model Training</h3>
-                <p>Implemented Logistic Regression, Decision Tree and Random Forest classification algorithms.</p>
-            </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="workflow-number">07</div>
-            <div class="workflow-details">
-                <h3>Hyperparameter Tuning</h3>
-                <p>Used GridSearchCV with 5-fold cross-validation and F1-score to identify suitable model parameters.</p>
-            </div>
-        </div>
-
-        <div class="workflow-step">
-            <div class="workflow-number">08</div>
-            <div class="workflow-details">
-                <h3>Ensemble & Model Evaluation</h3>
-                <p>Built a Soft Voting Classifier and compared model performance using accuracy, precision, recall, F1-score and confusion matrices.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
+        </section>
 
 
         <!-- PROBLEM STATEMENT -->
@@ -379,9 +424,24 @@
             <h3>Dataset Features</h3>
 
             <div class="churn-content-card">
-                <p><strong>Customer Information:</strong> Gender, SeniorCitizen, Partner and Dependents.</p>
-                <p><strong>Service Information:</strong> PhoneService, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV and StreamingMovies.</p>
-                <p><strong>Account Information:</strong> Tenure, Contract, PaperlessBilling, PaymentMethod, MonthlyCharges and TotalCharges.</p>
+                <p>
+                    <strong>Customer Information:</strong>
+                    Gender, SeniorCitizen, Partner and Dependents.
+                </p>
+
+                <p>
+                    <strong>Service Information:</strong>
+                    PhoneService, InternetService, OnlineSecurity,
+                    OnlineBackup, DeviceProtection, TechSupport,
+                    StreamingTV and StreamingMovies.
+                </p>
+
+                <p>
+                    <strong>Account Information:</strong>
+                    Tenure, Contract, PaperlessBilling, PaymentMethod,
+                    MonthlyCharges and TotalCharges.
+                </p>
+
                 <p><strong>Target:</strong> Churn.</p>
             </div>
 
@@ -390,6 +450,7 @@
             <div class="churn-content-card">
                 <p><strong>No Churn:</strong> 5,174 customers (73.46%)</p>
                 <p><strong>Churn:</strong> 1,869 customers (26.54%)</p>
+
                 <p>
                     The dataset contains more customers who
                     continued using the service than customers
@@ -484,132 +545,146 @@
         </section>
 
 
-        <!-- PHASE 04: EDA -->
-        
-<!-- PHASE 04: EXPLORATORY DATA ANALYSIS -->
-<section class="churn-section" id="eda">
+        <!-- PHASE 04: EXPLORATORY DATA ANALYSIS -->
+        <section class="churn-section" id="eda">
 
-    <p class="churn-section-label">PHASE 04</p>
+            <p class="churn-section-label">PHASE 04</p>
 
-    <h2>Exploratory Data Analysis</h2>
+            <h2>Exploratory Data Analysis</h2>
 
-    <p class="churn-intro">
-        Exploratory Data Analysis (EDA) was performed to
-        understand customer characteristics, examine data
-        distributions and explore patterns related to churn.
-    </p>
+            <p class="churn-intro">
+                Exploratory Data Analysis (EDA) was performed to
+                understand customer characteristics, examine data
+                distributions and explore patterns related to churn.
+            </p>
 
-    <div class="eda-grid">
+            <div class="eda-grid">
 
-        <!-- GRAPH 1 -->
-        <div class="eda-card">
-            <div class="eda-image">
-                <img
-                    src="images/01_customer_churn_distribution.png"
-                    alt="Customer Churn Distribution"
-                    loading="lazy"
-                >
+                <!-- GRAPH 1 -->
+                <div class="eda-card">
+
+                    <div class="eda-image">
+                        <img
+                            src="images/01_customer_churn_distribution.png"
+                            alt="Customer Churn Distribution"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="eda-content">
+                        <span>EDA 01</span>
+                        <h3>Customer Churn Distribution</h3>
+
+                        <p>
+                            This graph shows the number of customers
+                            who continued using the service and those
+                            who left the company.
+                        </p>
+
+                        <p class="eda-insight">
+                            <strong>Observation:</strong>
+                            5,174 customers did not churn, while
+                            1,869 customers churned.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- GRAPH 2 -->
+                <div class="eda-card">
+
+                    <div class="eda-image">
+                        <img
+                            src="images/02_customer_tenure_distribution.png"
+                            alt="Distribution of Customer Tenure"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="eda-content">
+                        <span>EDA 02</span>
+                        <h3>Distribution of Customer Tenure</h3>
+
+                        <p>
+                            This visualization examines how long
+                            customers have stayed with the
+                            telecommunications company.
+                        </p>
+
+                        <p class="eda-insight">
+                            <strong>Purpose:</strong>
+                            To understand the distribution of
+                            customer tenure in months.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- GRAPH 3 -->
+                <div class="eda-card">
+
+                    <div class="eda-image">
+                        <img
+                            src="images/03_monthly_charges_distribution.png"
+                            alt="Distribution of Monthly Charges"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="eda-content">
+                        <span>EDA 03</span>
+                        <h3>Distribution of Monthly Charges</h3>
+
+                        <p>
+                            This graph explores the distribution
+                            of monthly charges paid by customers
+                            for their subscribed services.
+                        </p>
+
+                        <p class="eda-insight">
+                            <strong>Purpose:</strong>
+                            To understand the variation in
+                            monthly customer charges.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- GRAPH 4 -->
+                <div class="eda-card">
+
+                    <div class="eda-image">
+                        <img
+                            src="images/04_churn_by_contract_type.jpeg"
+                            alt="Customer Churn by Contract Type"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="eda-content">
+                        <span>EDA 04</span>
+                        <h3>Customer Churn by Contract Type</h3>
+
+                        <p>
+                            This visualization compares customer
+                            churn across different contract types.
+                        </p>
+
+                        <p class="eda-insight">
+                            <strong>Purpose:</strong>
+                            To examine the relationship between
+                            contract type and customer churn.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="eda-content">
-                <span>EDA 01</span>
-                <h3>Customer Churn Distribution</h3>
-                <p>
-                    This graph shows the number of customers
-                    who continued using the service and those
-                    who left the company.
-                </p>
-                <p class="eda-insight">
-                    <strong>Observation:</strong>
-                    5,174 customers did not churn, while
-                    1,869 customers churned.
-                </p>
-            </div>
-        </div>
-
-
-        <!-- GRAPH 2 -->
-        <div class="eda-card">
-            <div class="eda-image">
-                <img
-                    src="images/02_customer_tenure_distribution.png"
-                    alt="Distribution of Customer Tenure"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="eda-content">
-                <span>EDA 02</span>
-                <h3>Distribution of Customer Tenure</h3>
-                <p>
-                    This visualization examines how long
-                    customers have stayed with the
-                    telecommunications company.
-                </p>
-                <p class="eda-insight">
-                    <strong>Purpose:</strong>
-                    To understand the distribution of
-                    customer tenure in months.
-                </p>
-            </div>
-        </div>
-
-
-        <!-- GRAPH 3 -->
-        <div class="eda-card">
-            <div class="eda-image">
-                <img
-                    src="images/03_monthly_charges_distribution.png"
-                    alt="Distribution of Monthly Charges"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="eda-content">
-                <span>EDA 03</span>
-                <h3>Distribution of Monthly Charges</h3>
-                <p>
-                    This graph explores the distribution
-                    of monthly charges paid by customers
-                    for their subscribed services.
-                </p>
-                <p class="eda-insight">
-                    <strong>Purpose:</strong>
-                    To understand the variation in
-                    monthly customer charges.
-                </p>
-            </div>
-        </div>
-
-
-        <!-- GRAPH 4 -->
-        <div class="eda-card">
-            <div class="eda-image">
-                <img
-                    src="images/04_churn_by_contract_type.jpeg"
-                    alt="Customer Churn by Contract Type"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="eda-content">
-                <span>EDA 04</span>
-                <h3>Customer Churn by Contract Type</h3>
-                <p>
-                    This visualization compares customer
-                    churn across different contract types.
-                </p>
-                <p class="eda-insight">
-                    <strong>Purpose:</strong>
-                    To examine the relationship between
-                    contract type and customer churn.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
         <!-- PHASE 05: FEATURE SELECTION -->
@@ -655,6 +730,7 @@
 
             <div class="churn-highlight">
                 <h3>Feature Scaling</h3>
+
                 <p>
                     StandardScaler was applied to the selected
                     10 features. The scaler was fitted on the
@@ -741,133 +817,155 @@
 
         </section>
 
-<!-- CONFUSION MATRICES -->
-<section class="churn-section" id="confusion-matrices">
 
-    <span class="churn-section-label">MODEL EVALUATION</span>
-    <h2>Confusion Matrices</h2>
+        <!-- CONFUSION MATRICES -->
+        <section class="churn-section" id="confusion-matrices">
 
-    <p>
-        Confusion matrices help us understand how correctly each
-        model classified customers as Churn or No Churn.
-        They show correct predictions as well as classification errors.
-    </p>
+            <span class="churn-section-label">MODEL EVALUATION</span>
 
-    <div class="confusion-grid">
+            <h2>Confusion Matrices</h2>
 
-        <!-- LOGISTIC REGRESSION -->
-        <div class="confusion-card">
-            <h3>Logistic Regression</h3>
-            <p class="matrix-subtitle">Test Dataset</p>
+            <p>
+                Confusion matrices help us understand how correctly
+                each model classified customers as Churn or No Churn.
+                They show correct predictions as well as
+                classification errors.
+            </p>
 
-            <table class="matrix-table">
-                <tr>
-                    <th>Actual / Predicted</th>
-                    <th>No Churn</th>
-                    <th>Churn</th>
-                </tr>
-                <tr>
-                    <th>No Churn</th>
-                    <td class="true-cell">716</td>
-                    <td class="false-cell">319</td>
-                </tr>
-                <tr>
-                    <th>Churn</th>
-                    <td class="false-cell">73</td>
-                    <td class="true-cell">301</td>
-                </tr>
-            </table>
-        </div>
+            <div class="confusion-grid">
 
-        <!-- DECISION TREE -->
-        <div class="confusion-card">
-            <h3>Decision Tree</h3>
-            <p class="matrix-subtitle">Test Dataset</p>
+                <!-- LOGISTIC REGRESSION -->
+                <div class="confusion-card">
+                    <h3>Logistic Regression</h3>
+                    <p class="matrix-subtitle">Test Dataset</p>
 
-            <table class="matrix-table">
-                <tr>
-                    <th>Actual / Predicted</th>
-                    <th>No Churn</th>
-                    <th>Churn</th>
-                </tr>
-                <tr>
-                    <th>No Churn</th>
-                    <td class="true-cell">736</td>
-                    <td class="false-cell">299</td>
-                </tr>
-                <tr>
-                    <th>Churn</th>
-                    <td class="false-cell">70</td>
-                    <td class="true-cell">304</td>
-                </tr>
-            </table>
-        </div>
+                    <table class="matrix-table">
+                        <tr>
+                            <th>Actual / Predicted</th>
+                            <th>No Churn</th>
+                            <th>Churn</th>
+                        </tr>
+                        <tr>
+                            <th>No Churn</th>
+                            <td class="true-cell">716</td>
+                            <td class="false-cell">319</td>
+                        </tr>
+                        <tr>
+                            <th>Churn</th>
+                            <td class="false-cell">73</td>
+                            <td class="true-cell">301</td>
+                        </tr>
+                    </table>
+                </div>
 
-        <!-- RANDOM FOREST -->
-        <div class="confusion-card">
-            <h3>Random Forest</h3>
-            <p class="matrix-subtitle">Test Dataset</p>
 
-            <table class="matrix-table">
-                <tr>
-                    <th>Actual / Predicted</th>
-                    <th>No Churn</th>
-                    <th>Churn</th>
-                </tr>
-                <tr>
-                    <th>No Churn</th>
-                    <td class="true-cell">724</td>
-                    <td class="false-cell">311</td>
-                </tr>
-                <tr>
-                    <th>Churn</th>
-                    <td class="false-cell">73</td>
-                    <td class="true-cell">301</td>
-                </tr>
-            </table>
-        </div>
+                <!-- DECISION TREE -->
+                <div class="confusion-card">
+                    <h3>Decision Tree</h3>
+                    <p class="matrix-subtitle">Test Dataset</p>
 
-        <!-- VOTING CLASSIFIER -->
-        <div class="confusion-card">
-            <h3>Voting Classifier</h3>
-            <p class="matrix-subtitle">Test Dataset</p>
+                    <table class="matrix-table">
+                        <tr>
+                            <th>Actual / Predicted</th>
+                            <th>No Churn</th>
+                            <th>Churn</th>
+                        </tr>
+                        <tr>
+                            <th>No Churn</th>
+                            <td class="true-cell">736</td>
+                            <td class="false-cell">299</td>
+                        </tr>
+                        <tr>
+                            <th>Churn</th>
+                            <td class="false-cell">70</td>
+                            <td class="true-cell">304</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <table class="matrix-table">
-                <tr>
-                    <th>Actual / Predicted</th>
-                    <th>No Churn</th>
-                    <th>Churn</th>
-                </tr>
-                <tr>
-                    <th>No Churn</th>
-                    <td class="true-cell">713</td>
-                    <td class="false-cell">322</td>
-                </tr>
-                <tr>
-                    <th>Churn</th>
-                    <td class="false-cell">65</td>
-                    <td class="true-cell">309</td>
-                </tr>
-            </table>
-        </div>
 
-    </div>
+                <!-- RANDOM FOREST -->
+                <div class="confusion-card">
+                    <h3>Random Forest</h3>
+                    <p class="matrix-subtitle">Test Dataset</p>
 
-    <div class="churn-highlight">
-        <h3>Understanding the Confusion Matrix</h3>
-        <p><strong>True Negative (TN):</strong> Correctly predicted No Churn customers.</p>
-        <p><strong>True Positive (TP):</strong> Correctly predicted Churn customers.</p>
-        <p><strong>False Positive (FP):</strong> No Churn customers incorrectly predicted as Churn.</p>
-        <p><strong>False Negative (FN):</strong> Churn customers incorrectly predicted as No Churn.</p>
-    </div>
+                    <table class="matrix-table">
+                        <tr>
+                            <th>Actual / Predicted</th>
+                            <th>No Churn</th>
+                            <th>Churn</th>
+                        </tr>
+                        <tr>
+                            <th>No Churn</th>
+                            <td class="true-cell">724</td>
+                            <td class="false-cell">311</td>
+                        </tr>
+                        <tr>
+                            <th>Churn</th>
+                            <td class="false-cell">73</td>
+                            <td class="true-cell">301</td>
+                        </tr>
+                    </table>
+                </div>
 
-    <p class="matrix-note">
-        The Voting Classifier identified 309 actual churn customers
-        and achieved the highest recall of 82.62% among the four models.
-    </p>
 
-</section>
+                <!-- VOTING CLASSIFIER -->
+                <div class="confusion-card">
+                    <h3>Voting Classifier</h3>
+                    <p class="matrix-subtitle">Test Dataset</p>
 
+                    <table class="matrix-table">
+                        <tr>
+                            <th>Actual / Predicted</th>
+                            <th>No Churn</th>
+                            <th>Churn</th>
+                        </tr>
+                        <tr>
+                            <th>No Churn</th>
+                            <td class="true-cell">713</td>
+                            <td class="false-cell">322</td>
+                        </tr>
+                        <tr>
+                            <th>Churn</th>
+                            <td class="false-cell">65</td>
+                            <td class="true-cell">309</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="churn-highlight">
+                <h3>Understanding the Confusion Matrix</h3>
+
+                <p>
+                    <strong>True Negative (TN):</strong>
+                    Correctly predicted No Churn customers.
+                </p>
+
+                <p>
+                    <strong>True Positive (TP):</strong>
+                    Correctly predicted Churn customers.
+                </p>
+
+                <p>
+                    <strong>False Positive (FP):</strong>
+                    No Churn customers incorrectly predicted as Churn.
+                </p>
+
+                <p>
+                    <strong>False Negative (FN):</strong>
+                    Churn customers incorrectly predicted as No Churn.
+                </p>
+            </div>
+
+            <p class="matrix-note">
+                The Voting Classifier identified 309 actual churn
+                customers and achieved the highest recall of 82.62%
+                among the four models.
+            </p>
+
+        </section>
 
 
         <!-- PHASE 07: RESULTS -->
@@ -882,6 +980,8 @@
                 dataset using four classification metrics.
             </p>
 
+
+            <!-- RESULTS TABLE -->
             <div class="table-wrapper">
                 <table class="results-table">
 
@@ -896,6 +996,7 @@
                     </thead>
 
                     <tbody>
+
                         <tr>
                             <td>Logistic Regression</td>
                             <td>72.18%</td>
@@ -927,11 +1028,14 @@
                             <td>82.62%</td>
                             <td>61.49%</td>
                         </tr>
+
                     </tbody>
 
                 </table>
             </div>
 
+
+            <!-- PERFORMANCE HIGHLIGHTS -->
             <h3>Performance Highlights</h3>
 
             <div class="highlight-grid">
@@ -956,29 +1060,38 @@
 
             </div>
 
+
+            <!-- KEY FINDINGS -->
             <h3>Key Findings</h3>
 
             <ul class="findings-list">
+
                 <li>
                     Decision Tree achieved the highest accuracy
                     and F1-score among the evaluated models.
                 </li>
+
                 <li>
                     Voting Classifier achieved the highest recall,
                     identifying the largest proportion of actual
                     churn customers.
                 </li>
+
                 <li>
                     All four models achieved recall above 80%
                     on the test dataset.
                 </li>
+
                 <li>
                     Precision was comparatively lower, indicating
                     that some predicted churn cases were not
                     actual churn cases.
                 </li>
+
             </ul>
 
+
+            <!-- CONCLUSION -->
             <h3>Conclusion</h3>
 
             <p>
@@ -990,108 +1103,195 @@
                 Classifier achieved the highest recall.
             </p>
 
+
+            <!-- LIMITATIONS AND FUTURE SCOPE -->
             <h3>Limitations and Future Scope</h3>
 
             <ul class="findings-list">
+
                 <li>
                     Further feature engineering and experimentation
                     may improve prediction performance.
                 </li>
+
                 <li>
                     Additional customer data could help improve
                     prediction quality.
                 </li>
+
                 <li>
                     Future work can include deploying the model
                     through a web application.
                 </li>
+
                 <li>
                     Feature-importance analysis and business
                     recommendations can be explored in future work.
                 </li>
+
             </ul>
 
+
+            <!-- MODEL PERFORMANCE COMPARISON -->
+            <div class="model-comparison">
+
+                <h3>Model Performance Comparison</h3>
+
+                <p class="comparison-description">
+                    Comparison of the four models based on
+                    Accuracy and F1-score.
+                </p>
+
+                <div class="comparison-legend">
+                    <span>
+                        <i class="legend-box accuracy-legend"></i>
+                        Accuracy
+                    </span>
+
+                    <span>
+                        <i class="legend-box f1-legend"></i>
+                        F1-score
+                    </span>
+                </div>
+
+
+                <!-- LOGISTIC REGRESSION -->
+                <div class="comparison-item">
+
+                    <div class="comparison-heading">
+                        <h4>Logistic Regression</h4>
+                        <span>72.18% Accuracy</span>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar accuracy-bar"
+                            style="width: 72.18%">
+                        </div>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar f1-bar"
+                            style="width: 60.56%">
+                        </div>
+                    </div>
+
+                    <p class="bar-values">F1-score: 60.56%</p>
+
+                </div>
+
+
+                <!-- DECISION TREE -->
+                <div class="comparison-item">
+
+                    <div class="comparison-heading">
+                        <h4>Decision Tree</h4>
+                        <span>73.81% Accuracy</span>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar accuracy-bar"
+                            style="width: 73.81%">
+                        </div>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar f1-bar"
+                            style="width: 62.23%">
+                        </div>
+                    </div>
+
+                    <p class="bar-values">F1-score: 62.23%</p>
+
+                </div>
+
+
+                <!-- RANDOM FOREST -->
+                <div class="comparison-item">
+
+                    <div class="comparison-heading">
+                        <h4>Random Forest</h4>
+                        <span>72.75% Accuracy</span>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar accuracy-bar"
+                            style="width: 72.75%">
+                        </div>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar f1-bar"
+                            style="width: 61.05%">
+                        </div>
+                    </div>
+
+                    <p class="bar-values">F1-score: 61.05%</p>
+
+                </div>
+
+
+                <!-- VOTING CLASSIFIER -->
+                <div class="comparison-item">
+
+                    <div class="comparison-heading">
+                        <h4>Voting Classifier</h4>
+                        <span>72.53% Accuracy</span>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar accuracy-bar"
+                            style="width: 72.53%">
+                        </div>
+                    </div>
+
+                    <div class="comparison-bars">
+                        <div
+                            class="comparison-bar f1-bar"
+                            style="width: 61.49%">
+                        </div>
+                    </div>
+
+                    <p class="bar-values">F1-score: 61.49%</p>
+
+                </div>
+
+
+                <!-- COMPARISON INSIGHTS -->
+                <div class="comparison-insight">
+
+                    <h4>Key Observations</h4>
+
+                    <ul>
+                        <li>
+                            Decision Tree achieved the highest
+                            accuracy (73.81%) and F1-score (62.23%)
+                            among the four models.
+                        </li>
+
+                        <li>
+                            Voting Classifier achieved the highest
+                            recall (82.62%), making it the strongest
+                            model for identifying churn cases by recall.
+                        </li>
+
+                        <li>
+                            All four models showed comparable
+                            overall performance on the test dataset.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
         </section>
-
-<!-- MODEL PERFORMANCE COMPARISON -->
-<div class="model-comparison">
-
-    <h3>Model Performance Comparison</h3>
-    <p class="comparison-description">
-        Comparison of the four models based on Accuracy and F1-score.
-    </p>
-
-    <div class="comparison-legend">
-        <span><i class="legend-box accuracy-legend"></i> Accuracy</span>
-        <span><i class="legend-box f1-legend"></i> F1-score</span>
-    </div>
-
-    <div class="comparison-item">
-        <div class="comparison-heading">
-            <h4>Logistic Regression</h4>
-            <span>72.18% Accuracy</span>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar accuracy-bar" style="width: 72.18%"></div>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar f1-bar" style="width: 60.56%"></div>
-        </div>
-        <p class="bar-values">F1-score: 60.56%</p>
-    </div>
-
-    <div class="comparison-item">
-        <div class="comparison-heading">
-            <h4>Decision Tree</h4>
-            <span>73.81% Accuracy</span>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar accuracy-bar" style="width: 73.81%"></div>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar f1-bar" style="width: 62.23%"></div>
-        </div>
-        <p class="bar-values">F1-score: 62.23%</p>
-    </div>
-
-    <div class="comparison-item">
-        <div class="comparison-heading">
-            <h4>Random Forest</h4>
-            <span>72.75% Accuracy</span>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar accuracy-bar" style="width: 72.75%"></div>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar f1-bar" style="width: 61.05%"></div>
-        </div>
-        <p class="bar-values">F1-score: 61.05%</p>
-    </div>
-
-    <div class="comparison-item">
-        <div class="comparison-heading">
-            <h4>Voting Classifier</h4>
-            <span>72.53% Accuracy</span>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar accuracy-bar" style="width: 72.53%"></div>
-        </div>
-        <div class="comparison-bars">
-            <div class="comparison-bar f1-bar" style="width: 61.49%"></div>
-        </div>
-        <p class="bar-values">F1-score: 61.49%</p>
-    </div>
-
-    <div class="comparison-insight">
-        <h4>Key Observations</h4>
-        <ul>
-            <li>Decision Tree achieved the highest accuracy (73.81%) and F1-score (62.23%) among the four models.</li>
-            <li>Voting Classifier achieved the highest recall (82.62%), making it the strongest model for identifying churn cases by recall.</li>
-            <li>All four models showed comparable overall performance on the test dataset.</li>
-        </ul>
-    </div>
-
-</div>
 
 
         <!-- TECHNOLOGIES -->
@@ -1147,11 +1347,15 @@
 
     <!-- FOOTER -->
     <footer class="churn-footer">
+
         <p>
             © 2026 Kartik Arora | Customer Churn Prediction
         </p>
 
-        <a href="index.html#project">← Back to My Projects</a>
+        <a href="index.html#project">
+            ← Back to My Projects
+        </a>
+
     </footer>
 
 </body>
