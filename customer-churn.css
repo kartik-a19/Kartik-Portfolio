@@ -546,3 +546,85 @@ html {
         min-height: 180px;
     }
 }
+
+/* CONFUSION MATRIX SECTION */
+
+.confusion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.confusion-card {
+    padding: 25px;
+    background: #111827;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 14px;
+    overflow-x: auto;
+    transition: 0.3s;
+}
+
+.confusion-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+.confusion-card h3 {
+    color: #ffffff;
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.matrix-subtitle {
+    color: #94a3b8;
+    font-size: 13px !important;
+    margin-bottom: 20px;
+}
+
+.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 300px;
+    text-align: center;
+}
+
+.matrix-table th,
+.matrix-table td {
+    padding: 15px 10px;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    font-size: 13px;
+}
+
+.matrix-table th {
+    background: rgba(56, 189, 248, 0.10);
+    color: #7dd3fc;
+}
+
+.matrix-table td {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.matrix-table .true-cell {
+    background: rgba(34, 197, 94, 0.13);
+    color: #4ade80;
+}
+
+.matrix-table .false-cell {
+    background: rgba(248, 113, 113, 0.12);
+    color: #f87171;
+}
+
+.matrix-note {
+    margin-top: 25px;
+    font-size: 14px !important;
+    color: #94a3b8 !important;
+}
+
+@media (max-width: 750px) {
+    .confusion-grid {
+        grid-template-columns: 1fr;
+    }
+}

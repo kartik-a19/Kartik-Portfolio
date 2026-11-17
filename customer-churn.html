@@ -660,6 +660,134 @@
 
         </section>
 
+<!-- CONFUSION MATRICES -->
+<section class="churn-section" id="confusion-matrices">
+
+    <span class="churn-section-label">MODEL EVALUATION</span>
+    <h2>Confusion Matrices</h2>
+
+    <p>
+        Confusion matrices help us understand how correctly each
+        model classified customers as Churn or No Churn.
+        They show correct predictions as well as classification errors.
+    </p>
+
+    <div class="confusion-grid">
+
+        <!-- LOGISTIC REGRESSION -->
+        <div class="confusion-card">
+            <h3>Logistic Regression</h3>
+            <p class="matrix-subtitle">Test Dataset</p>
+
+            <table class="matrix-table">
+                <tr>
+                    <th>Actual / Predicted</th>
+                    <th>No Churn</th>
+                    <th>Churn</th>
+                </tr>
+                <tr>
+                    <th>No Churn</th>
+                    <td class="true-cell">716</td>
+                    <td class="false-cell">319</td>
+                </tr>
+                <tr>
+                    <th>Churn</th>
+                    <td class="false-cell">73</td>
+                    <td class="true-cell">301</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- DECISION TREE -->
+        <div class="confusion-card">
+            <h3>Decision Tree</h3>
+            <p class="matrix-subtitle">Test Dataset</p>
+
+            <table class="matrix-table">
+                <tr>
+                    <th>Actual / Predicted</th>
+                    <th>No Churn</th>
+                    <th>Churn</th>
+                </tr>
+                <tr>
+                    <th>No Churn</th>
+                    <td class="true-cell">736</td>
+                    <td class="false-cell">299</td>
+                </tr>
+                <tr>
+                    <th>Churn</th>
+                    <td class="false-cell">70</td>
+                    <td class="true-cell">304</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- RANDOM FOREST -->
+        <div class="confusion-card">
+            <h3>Random Forest</h3>
+            <p class="matrix-subtitle">Test Dataset</p>
+
+            <table class="matrix-table">
+                <tr>
+                    <th>Actual / Predicted</th>
+                    <th>No Churn</th>
+                    <th>Churn</th>
+                </tr>
+                <tr>
+                    <th>No Churn</th>
+                    <td class="true-cell">724</td>
+                    <td class="false-cell">311</td>
+                </tr>
+                <tr>
+                    <th>Churn</th>
+                    <td class="false-cell">73</td>
+                    <td class="true-cell">301</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- VOTING CLASSIFIER -->
+        <div class="confusion-card">
+            <h3>Voting Classifier</h3>
+            <p class="matrix-subtitle">Test Dataset</p>
+
+            <table class="matrix-table">
+                <tr>
+                    <th>Actual / Predicted</th>
+                    <th>No Churn</th>
+                    <th>Churn</th>
+                </tr>
+                <tr>
+                    <th>No Churn</th>
+                    <td class="true-cell">713</td>
+                    <td class="false-cell">322</td>
+                </tr>
+                <tr>
+                    <th>Churn</th>
+                    <td class="false-cell">65</td>
+                    <td class="true-cell">309</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="churn-highlight">
+        <h3>Understanding the Confusion Matrix</h3>
+        <p><strong>True Negative (TN):</strong> Correctly predicted No Churn customers.</p>
+        <p><strong>True Positive (TP):</strong> Correctly predicted Churn customers.</p>
+        <p><strong>False Positive (FP):</strong> No Churn customers incorrectly predicted as Churn.</p>
+        <p><strong>False Negative (FN):</strong> Churn customers incorrectly predicted as No Churn.</p>
+    </div>
+
+    <p class="matrix-note">
+        The Voting Classifier identified 309 actual churn customers
+        and achieved the highest recall of 82.62% among the four models.
+    </p>
+
+</section>
+
+
 
         <!-- PHASE 07: RESULTS -->
         <section class="churn-section" id="results">
