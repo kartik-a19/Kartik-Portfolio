@@ -404,77 +404,131 @@
 
 
         <!-- PHASE 04: EDA -->
-        <section class="churn-section" id="eda">
+        
+<!-- PHASE 04: EXPLORATORY DATA ANALYSIS -->
+<section class="churn-section" id="eda">
 
-            <p class="churn-section-label">PHASE 04</p>
+    <p class="churn-section-label">PHASE 04</p>
 
-            <h2>Exploratory Data Analysis</h2>
+    <h2>Exploratory Data Analysis</h2>
 
-            <p class="churn-intro">
-                Exploratory Data Analysis (EDA) was performed
-                to understand the distribution of customer
-                information and identify patterns associated
-                with customer churn.
-            </p>
+    <p class="churn-intro">
+        Exploratory Data Analysis (EDA) was performed to
+        understand customer characteristics, examine data
+        distributions and explore patterns related to churn.
+    </p>
 
-            <div class="churn-objectives-grid">
+    <div class="eda-grid">
 
-                <div class="churn-objective-card">
-                    <span>01</span>
-                    <h3>Customer Churn Distribution</h3>
-                    <p>
-                        Examined the number and proportion
-                        of customers who churned and those
-                        who continued the service.
-                    </p>
-                </div>
-
-                <div class="churn-objective-card">
-                    <span>02</span>
-                    <h3>Customer Tenure</h3>
-                    <p>
-                        Studied the distribution of customer
-                        tenure to understand how long customers
-                        stayed with the company.
-                    </p>
-                </div>
-
-                <div class="churn-objective-card">
-                    <span>03</span>
-                    <h3>Monthly Charges</h3>
-                    <p>
-                        Analyzed the distribution of monthly
-                        charges across customers.
-                    </p>
-                </div>
-
-                <div class="churn-objective-card">
-                    <span>04</span>
-                    <h3>Contract Type and Churn</h3>
-                    <p>
-                        Visualized customer churn across
-                        different contract types.
-                    </p>
-                </div>
-
+        <!-- GRAPH 1 -->
+        <div class="eda-card">
+            <div class="eda-image">
+                <img
+                    src="images/01_customer_churn_distribution.png"
+                    alt="Customer Churn Distribution"
+                    loading="lazy"
+                >
             </div>
 
-            <div class="churn-content-card">
-                <h3>Visualizations Created</h3>
-                <ul>
-                    <li>Customer Churn Distribution</li>
-                    <li>Distribution of Customer Tenure</li>
-                    <li>Distribution of Monthly Charges</li>
-                    <li>Customer Churn by Contract Type</li>
-                </ul>
+            <div class="eda-content">
+                <span>EDA 01</span>
+                <h3>Customer Churn Distribution</h3>
                 <p>
-                    These visualizations helped explore the
-                    dataset before applying machine learning
-                    algorithms.
+                    This graph shows the number of customers
+                    who continued using the service and those
+                    who left the company.
+                </p>
+                <p class="eda-insight">
+                    <strong>Observation:</strong>
+                    5,174 customers did not churn, while
+                    1,869 customers churned.
                 </p>
             </div>
+        </div>
 
-        </section>
+
+        <!-- GRAPH 2 -->
+        <div class="eda-card">
+            <div class="eda-image">
+                <img
+                    src="images/02_customer_tenure_distribution.png"
+                    alt="Distribution of Customer Tenure"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="eda-content">
+                <span>EDA 02</span>
+                <h3>Distribution of Customer Tenure</h3>
+                <p>
+                    This visualization examines how long
+                    customers have stayed with the
+                    telecommunications company.
+                </p>
+                <p class="eda-insight">
+                    <strong>Purpose:</strong>
+                    To understand the distribution of
+                    customer tenure in months.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- GRAPH 3 -->
+        <div class="eda-card">
+            <div class="eda-image">
+                <img
+                    src="images/03_monthly_charges_distribution.png"
+                    alt="Distribution of Monthly Charges"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="eda-content">
+                <span>EDA 03</span>
+                <h3>Distribution of Monthly Charges</h3>
+                <p>
+                    This graph explores the distribution
+                    of monthly charges paid by customers
+                    for their subscribed services.
+                </p>
+                <p class="eda-insight">
+                    <strong>Purpose:</strong>
+                    To understand the variation in
+                    monthly customer charges.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- GRAPH 4 -->
+        <div class="eda-card">
+            <div class="eda-image">
+                <img
+                    src="images/04_churn_by_contract_type.jpeg"
+                    alt="Customer Churn by Contract Type"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="eda-content">
+                <span>EDA 04</span>
+                <h3>Customer Churn by Contract Type</h3>
+                <p>
+                    This visualization compares customer
+                    churn across different contract types.
+                </p>
+                <p class="eda-insight">
+                    <strong>Purpose:</strong>
+                    To examine the relationship between
+                    contract type and customer churn.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- PHASE 05: FEATURE SELECTION -->
