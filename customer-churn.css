@@ -1,0 +1,208 @@
+
+/* CUSTOMER CHURN PROJECT PAGE */
+
+.churn-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.churn-hero {
+    min-height: 430px;
+    padding: 100px 8% 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.churn-tag {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.churn-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    margin: 20px 0;
+}
+
+.churn-hero h1 span {
+    color: #38bdf8;
+}
+
+.churn-subtitle {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.churn-tags,
+.churn-tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.churn-tags span,
+.churn-tech span {
+    padding: 9px 16px;
+    border: 1px solid #38bdf8;
+    border-radius: 25px;
+    color: #38bdf8;
+}
+
+.churn-back {
+    display: inline-block;
+    margin-top: 15px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.churn-container {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.churn-section {
+    padding: 55px 0;
+    scroll-margin-top: 90px;
+}
+
+.churn-section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+.churn-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.churn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.churn-card {
+    padding: 25px;
+    border-radius: 14px;
+    background: #111827;
+    border: 1px solid #263449;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.churn-card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+.churn-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.churn-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.churn-stat {
+    background: #111827;
+    border: 1px solid #263449;
+    border-radius: 14px;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.churn-stat h3 {
+    color: #38bdf8;
+    font-size: 2rem;
+}
+
+.churn-list {
+    line-height: 2.2;
+    padding-left: 25px;
+}
+
+.churn-timeline {
+    border-left: 2px solid #38bdf8;
+    margin-left: 15px;
+    padding-left: 30px;
+}
+
+.churn-step {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.churn-step span {
+    color: #38bdf8;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.churn-step h3 {
+    margin-bottom: 8px;
+}
+
+.churn-note {
+    margin-top: 25px;
+    padding: 18px;
+    background: #111827;
+    border-left: 3px solid #38bdf8;
+    border-radius: 8px;
+}
+
+.churn-footer {
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 40px;
+    background: #111827;
+}
+
+.churn-footer a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .churn-hero {
+        padding: 75px 5% 50px;
+    }
+
+    .churn-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .churn-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .churn-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .churn-nav a {
+        font-size: 11px;
+    }
+
+    .churn-section h2 {
+        font-size: 1.6rem;
+    }
+
+}
