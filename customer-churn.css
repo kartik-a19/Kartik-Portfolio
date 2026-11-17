@@ -717,3 +717,140 @@ html {
         padding: 16px;
     }
 }
+
+/* MODEL PERFORMANCE COMPARISON */
+
+.model-comparison {
+    margin-top: 45px;
+    padding: 28px;
+    background: #111827;
+    border: 1px solid rgba(56, 189, 248, 0.18);
+    border-radius: 16px;
+}
+
+.model-comparison h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.comparison-description {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.comparison-legend {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.comparison-legend span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.accuracy-legend {
+    background: #38bdf8;
+}
+
+.f1-legend {
+    background: #a78bfa;
+}
+
+.comparison-item {
+    margin-bottom: 27px;
+}
+
+.comparison-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.comparison-heading h4 {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+}
+
+.comparison-heading span,
+.bar-values {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.comparison-bars {
+    height: 10px;
+    width: 100%;
+    background: #263244;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+
+.comparison-bar {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.accuracy-bar {
+    background: #38bdf8;
+}
+
+.f1-bar {
+    background: #a78bfa;
+}
+
+.bar-values {
+    text-align: right;
+    margin: 5px 0 0;
+}
+
+.comparison-insight {
+    margin-top: 32px;
+    padding: 20px;
+    border-left: 3px solid #38bdf8;
+    background: rgba(56, 189, 248, 0.07);
+    border-radius: 8px;
+}
+
+.comparison-insight h4 {
+    color: #38bdf8;
+    margin: 0 0 12px;
+}
+
+.comparison-insight ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.comparison-insight li {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    .model-comparison {
+        padding: 18px;
+    }
+
+    .comparison-heading {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

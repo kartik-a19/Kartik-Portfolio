@@ -1013,6 +1013,86 @@
 
         </section>
 
+<!-- MODEL PERFORMANCE COMPARISON -->
+<div class="model-comparison">
+
+    <h3>Model Performance Comparison</h3>
+    <p class="comparison-description">
+        Comparison of the four models based on Accuracy and F1-score.
+    </p>
+
+    <div class="comparison-legend">
+        <span><i class="legend-box accuracy-legend"></i> Accuracy</span>
+        <span><i class="legend-box f1-legend"></i> F1-score</span>
+    </div>
+
+    <div class="comparison-item">
+        <div class="comparison-heading">
+            <h4>Logistic Regression</h4>
+            <span>72.18% Accuracy</span>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar accuracy-bar" style="width: 72.18%"></div>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar f1-bar" style="width: 60.56%"></div>
+        </div>
+        <p class="bar-values">F1-score: 60.56%</p>
+    </div>
+
+    <div class="comparison-item">
+        <div class="comparison-heading">
+            <h4>Decision Tree</h4>
+            <span>73.81% Accuracy</span>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar accuracy-bar" style="width: 73.81%"></div>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar f1-bar" style="width: 62.23%"></div>
+        </div>
+        <p class="bar-values">F1-score: 62.23%</p>
+    </div>
+
+    <div class="comparison-item">
+        <div class="comparison-heading">
+            <h4>Random Forest</h4>
+            <span>72.75% Accuracy</span>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar accuracy-bar" style="width: 72.75%"></div>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar f1-bar" style="width: 61.05%"></div>
+        </div>
+        <p class="bar-values">F1-score: 61.05%</p>
+    </div>
+
+    <div class="comparison-item">
+        <div class="comparison-heading">
+            <h4>Voting Classifier</h4>
+            <span>72.53% Accuracy</span>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar accuracy-bar" style="width: 72.53%"></div>
+        </div>
+        <div class="comparison-bars">
+            <div class="comparison-bar f1-bar" style="width: 61.49%"></div>
+        </div>
+        <p class="bar-values">F1-score: 61.49%</p>
+    </div>
+
+    <div class="comparison-insight">
+        <h4>Key Observations</h4>
+        <ul>
+            <li>Decision Tree achieved the highest accuracy (73.81%) and F1-score (62.23%) among the four models.</li>
+            <li>Voting Classifier achieved the highest recall (82.62%), making it the strongest model for identifying churn cases by recall.</li>
+            <li>All four models showed comparable overall performance on the test dataset.</li>
+        </ul>
+    </div>
+
+</div>
+
 
         <!-- TECHNOLOGIES -->
         <section class="churn-section" id="technologies">
