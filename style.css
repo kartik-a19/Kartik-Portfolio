@@ -5,10 +5,7 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 85px;
-}
+
 
 body {
     margin: 0;
@@ -595,6 +592,22 @@ body:not(.dark-mode) footer {
     }
 }
 /* SCROLL ANIMATIONS */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+/* SCROLL REVEAL ANIMATION */
 
 .reveal {
     opacity: 0;
