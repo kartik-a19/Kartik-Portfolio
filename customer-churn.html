@@ -1,12 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Customer Churn Prediction | Kartik Arora</title>
+    <title>Customer Churn Prediction | ML Project</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="customer-churn.css">
@@ -14,320 +13,294 @@
 
 <body class="dark-mode">
 
-    <!-- NAVBAR -->
+    <!-- Navigation -->
     <nav class="churn-nav">
-        <ul>
-            <li><a href="index.html">← BACK TO PORTFOLIO</a></li>
-            <li><a href="#overview">OVERVIEW</a></li>
-            <li><a href="#dataset">DATASET</a></li>
-            <li><a href="#workflow">WORKFLOW</a></li>
-            <li><a href="#results">RESULTS</a></li>
-        </ul>
+        <a href="index.html" class="churn-logo">
+            Kartik<span>.</span>
+        </a>
+
+        <div class="churn-nav-links">
+            <a href="index.html">Home</a>
+            <a href="#overview">Overview</a>
+            <a href="#problem">Problem</a>
+            <a href="#objectives">Objectives</a>
+        </div>
     </nav>
 
-    <!-- HERO SECTION -->
+
+    <!-- Hero Section -->
     <header class="churn-hero">
 
-        <p class="churn-tag">MACHINE LEARNING PROJECT</p>
+        <div class="churn-hero-content">
 
-        <h1>Customer Churn <span>Prediction</span></h1>
+            <p class="churn-eyebrow">
+                MACHINE LEARNING PROJECT
+            </p>
 
-        <p class="churn-subtitle">
-            Using Machine Learning to understand customer behaviour
-            and predict customer churn in the telecommunications industry.
-        </p>
+            <h1>
+                Customer Churn
+                <span>Prediction</span>
+            </h1>
 
-        <div class="churn-tags">
-            <span>Python</span>
-            <span>Machine Learning</span>
-            <span>Classification</span>
-            <span>Scikit-learn</span>
+            <p class="churn-subtitle">
+                Using Machine Learning to identify customers
+                who are likely to discontinue a service.
+            </p>
+
+            <div class="churn-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Classification</span>
+                <span>Scikit-learn</span>
+            </div>
+
+            <div class="churn-hero-buttons">
+
+                <a
+                    href="https://colab.research.google.com/drive/1kstNuHZXFUsjrSEr729gnlzuDcRMRlH7?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="churn-primary-btn"
+                >
+                    View Google Colab Notebook ↗
+                </a>
+
+                <a href="#overview" class="churn-secondary-btn">
+                    Explore Project ↓
+                </a>
+
+            </div>
+
         </div>
-
-        <a href="index.html#project" class="churn-back">
-            ← Back to My Projects
-        </a>
 
     </header>
 
+
     <main class="churn-container">
 
-        <!-- OVERVIEW -->
-        <section id="overview" class="churn-section">
+        <!-- Project Overview -->
+        <section class="churn-section" id="overview">
+
+            <p class="churn-section-label">PHASE 01</p>
 
             <h2>Project Overview</h2>
 
-            <p>
-                Customer churn refers to the situation where customers
-                stop using a company's products or services.
-                Predicting customer churn helps businesses identify
-                customers who may leave and take appropriate steps
-                to improve customer retention.
+            <p class="churn-intro">
+                Customer Churn Prediction is a Machine Learning
+                classification project that focuses on identifying
+                customers who are likely to leave a
+                telecommunications company.
             </p>
 
             <p>
-                In this project, machine learning techniques are used
-                to analyse telecom customer data and predict whether
-                a customer is likely to leave the service.
+                The project uses historical customer information,
+                including tenure, services, contract details,
+                payment methods and monthly charges, to understand
+                patterns associated with customer churn.
             </p>
+
+            <p>
+                Three classification algorithms — Logistic
+                Regression, Decision Tree and Random Forest —
+                were trained and evaluated. A Soft Voting
+                Classifier was also implemented by combining
+                the three tuned models.
+            </p>
+
+            <div class="churn-info-grid">
+
+                <div class="churn-info-card">
+                    <span class="churn-info-icon">📊</span>
+                    <h3>Project Type</h3>
+                    <p>Supervised Machine Learning</p>
+                </div>
+
+                <div class="churn-info-card">
+                    <span class="churn-info-icon">🎯</span>
+                    <h3>Task</h3>
+                    <p>Binary Classification</p>
+                </div>
+
+                <div class="churn-info-card">
+                    <span class="churn-info-icon">📁</span>
+                    <h3>Dataset</h3>
+                    <p>Telco Customer Churn</p>
+                </div>
+
+                <div class="churn-info-card">
+                    <span class="churn-info-icon">👥</span>
+                    <h3>Project Team</h3>
+                    <p>Riya, Kartik Arora, Harsh Sharma</p>
+                </div>
+
+            </div>
 
         </section>
 
-        <!-- OBJECTIVE -->
-        <section class="churn-section">
+
+        <!-- Problem Statement -->
+        <section class="churn-section" id="problem">
+
+            <p class="churn-section-label">01.1</p>
+
+            <h2>Problem Statement</h2>
+
+            <div class="churn-content-card">
+
+                <p>
+                    Customer churn refers to the situation in which
+                    a customer stops using a company's products
+                    or services.
+                </p>
+
+                <p>
+                    In the telecommunications industry, customer
+                    churn is a major business challenge because
+                    losing existing customers can lead to reduced
+                    revenue, increased customer acquisition costs
+                    and difficulties in maintaining long-term
+                    customer relationships.
+                </p>
+
+                <p>
+                    Telecommunication companies collect customer
+                    information such as demographics, service
+                    usage, contract details, payment methods,
+                    monthly charges and customer tenure.
+                </p>
+
+                <p>
+                    By analyzing this historical information,
+                    Machine Learning models can learn patterns
+                    associated with customers who have left
+                    the company and predict whether other
+                    customers are likely to churn.
+                </p>
+
+            </div>
+
+            <div class="churn-highlight">
+                <h3>Key Question</h3>
+                <p>
+                    Can we use historical customer data to
+                    identify customers who are likely to
+                    discontinue their telecommunications services?
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Project Objectives -->
+        <section class="churn-section" id="objectives">
+
+            <p class="churn-section-label">01.2</p>
 
             <h2>Project Objectives</h2>
 
-            <div class="churn-grid">
+            <p class="churn-section-description">
+                The main objective is to develop a Machine
+                Learning-based classification system that
+                predicts customer churn using historical
+                telecommunications data.
+            </p>
 
-                <div class="churn-card">
-                    <h3>Understand Customer Behaviour</h3>
+            <div class="churn-objectives-grid">
+
+                <div class="churn-objective-card">
+                    <span>01</span>
+                    <h3>Understand Customer Data</h3>
                     <p>
-                        Analyse customer information and identify
+                        Analyze customer information to identify
                         patterns related to churn.
                     </p>
                 </div>
 
-                <div class="churn-card">
-                    <h3>Data Analysis</h3>
-                    <p>
-                        Explore the dataset through statistical
-                        analysis and visualizations.
-                    </p>
-                </div>
-
-                <div class="churn-card">
-                    <h3>Build ML Models</h3>
-                    <p>
-                        Train classification models to predict
-                        customer churn.
-                    </p>
-                </div>
-
-                <div class="churn-card">
-                    <h3>Compare Performance</h3>
-                    <p>
-                        Evaluate different models using
-                        classification performance metrics.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- DATASET -->
-        <section id="dataset" class="churn-section">
-
-            <h2>Dataset Information</h2>
-
-            <p>
-                The project uses the Telco Customer Churn dataset.
-                It contains customer details, subscribed services,
-                account information and churn status.
-            </p>
-
-            <div class="churn-stats">
-
-                <div class="churn-stat">
-                    <h3>7,043</h3>
-                    <p>Total Records</p>
-                </div>
-
-                <div class="churn-stat">
-                    <h3>21</h3>
-                    <p>Original Columns</p>
-                </div>
-
-                <div class="churn-stat">
-                    <h3>2</h3>
-                    <p>Target Classes</p>
-                </div>
-
-            </div>
-
-            <h3>Target Variable</h3>
-
-            <p>
-                The target variable is <strong>Churn</strong>,
-                which indicates whether a customer has left the service.
-            </p>
-
-            <ul class="churn-list">
-                <li><strong>No:</strong> Customer continues using the service.</li>
-                <li><strong>Yes:</strong> Customer has left the service.</li>
-            </ul>
-
-        </section>
-
-        <!-- WORKFLOW -->
-        <section id="workflow" class="churn-section">
-
-            <h2>Project Workflow</h2>
-
-            <div class="churn-timeline">
-
-                <div class="churn-step">
-                    <span>01</span>
-                    <div>
-                        <h3>Data Cleaning</h3>
-                        <p>
-                            Checked missing values, duplicates and
-                            handled the TotalCharges column.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="churn-step">
+                <div class="churn-objective-card">
                     <span>02</span>
-                    <div>
-                        <h3>Exploratory Data Analysis</h3>
-                        <p>
-                            Studied customer distribution, churn
-                            patterns and relationships between features.
-                        </p>
-                    </div>
+                    <h3>Data Preprocessing</h3>
+                    <p>
+                        Clean and prepare the dataset for
+                        Machine Learning.
+                    </p>
                 </div>
 
-                <div class="churn-step">
+                <div class="churn-objective-card">
                     <span>03</span>
-                    <div>
-                        <h3>Data Preprocessing</h3>
-                        <p>
-                            Applied categorical encoding and prepared
-                            the data for machine learning.
-                        </p>
-                    </div>
+                    <h3>Exploratory Data Analysis</h3>
+                    <p>
+                        Investigate relationships between
+                        customer characteristics and churn.
+                    </p>
                 </div>
 
-                <div class="churn-step">
+                <div class="churn-objective-card">
                     <span>04</span>
-                    <div>
-                        <h3>Feature Selection</h3>
-                        <p>
-                            Selected relevant features to help
-                            improve model performance.
-                        </p>
-                    </div>
+                    <h3>Train Classification Models</h3>
+                    <p>
+                        Implement Logistic Regression,
+                        Decision Tree and Random Forest.
+                    </p>
                 </div>
 
-                <div class="churn-step">
+                <div class="churn-objective-card">
                     <span>05</span>
-                    <div>
-                        <h3>Model Training</h3>
-                        <p>
-                            Trained Logistic Regression, Decision Tree,
-                            Random Forest and Voting Classifier models.
-                        </p>
-                    </div>
+                    <h3>Evaluate Model Performance</h3>
+                    <p>
+                        Compare models using accuracy,
+                        precision, recall, F1-score and
+                        confusion matrices.
+                    </p>
                 </div>
 
-                <div class="churn-step">
+                <div class="churn-objective-card">
                     <span>06</span>
-                    <div>
-                        <h3>Model Evaluation</h3>
-                        <p>
-                            Compared model performance using
-                            Accuracy, Precision, Recall and F1-score.
-                        </p>
-                    </div>
+                    <h3>Improve Model Performance</h3>
+                    <p>
+                        Apply cross-validation and
+                        hyperparameter tuning to assess
+                        model performance.
+                    </p>
                 </div>
 
             </div>
 
         </section>
 
-        <!-- TECHNOLOGIES -->
-        <section class="churn-section">
 
-            <h2>Technologies Used</h2>
+        <!-- Notebook Link -->
+        <section class="churn-notebook-section">
 
-            <div class="churn-tech">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Scikit-learn</span>
-                <span>Jupyter Notebook</span>
-                <span>Google Colab</span>
+            <div>
+                <p class="churn-section-label">PROJECT RESOURCE</p>
+                <h2>Explore the Complete Notebook</h2>
+
+                <p>
+                    View the Python implementation, data analysis,
+                    model training and evaluation in Google Colab.
+                </p>
             </div>
 
-        </section>
-
-<!-- Google Colab Notebook Section -->
-<section class="churn-section" id="notebook">
-    <h2>Explore the Code</h2>
-
-    <div class="churn-card notebook-card">
-        <h3>Google Colab Notebook</h3>
-
-        <p>
-            Explore the complete implementation of this
-            Customer Churn Prediction project, including
-            data preprocessing, exploratory data analysis,
-            feature selection and machine learning models.
-        </p>
-
-        <a
-            href="https://colab.research.google.com/drive/1kstNuHZXFUsjrSEr729gnlzuDcRMRlH7?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-        >
-            Open Google Colab ↗
-        </a>
-    </div>
-</section>
-
-        <!-- RESULTS -->
-        <section id="results" class="churn-section">
-
-            <h2>Results and Evaluation</h2>
-
-            <p>
-                Multiple classification models were trained and
-                compared to understand their ability to predict
-                customer churn.
-            </p>
-
-            <div class="churn-grid">
-
-                <div class="churn-card">
-                    <h3>Accuracy</h3>
-                    <p>Measures the overall proportion of correct predictions.</p>
-                </div>
-
-                <div class="churn-card">
-                    <h3>Precision</h3>
-                    <p>Measures how many predicted churn cases were actually churn cases.</p>
-                </div>
-
-                <div class="churn-card">
-                    <h3>Recall</h3>
-                    <p>Measures how many actual churn cases were correctly identified.</p>
-                </div>
-
-                <div class="churn-card">
-                    <h3>F1-score</h3>
-                    <p>Balances Precision and Recall into a single metric.</p>
-                </div>
-
-            </div>
-
-            <p class="churn-note">
-                Detailed model comparison and visualizations
-                can be added here from the final notebook results.
-            </p>
+            <a
+                href="https://colab.research.google.com/drive/1kstNuHZXFUsjrSEr729gnlzuDcRMRlH7?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="churn-primary-btn"
+            >
+                Open Google Colab ↗
+            </a>
 
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+
     <footer class="churn-footer">
-        <p>© 2026 Kartik Arora | Customer Churn Prediction Project</p>
-        <a href="index.html">Back to Portfolio ↑</a>
+        <p>
+            Customer Churn Prediction | Machine Learning Project
+        </p>
+
+        <a href="index.html">← Back to Portfolio</a>
     </footer>
 
 </body>
