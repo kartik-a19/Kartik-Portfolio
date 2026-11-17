@@ -132,6 +132,87 @@
 
         </section>
 
+<!-- PROJECT WORKFLOW -->
+<section class="churn-section" id="project-workflow">
+
+    <span class="churn-section-label">HOW IT WORKS</span>
+    <h2>Project Workflow</h2>
+
+    <p>
+        The project follows a structured machine learning pipeline,
+        starting from raw customer data and ending with churn predictions.
+    </p>
+
+    <div class="workflow-container">
+
+        <div class="workflow-step">
+            <div class="workflow-number">01</div>
+            <div class="workflow-details">
+                <h3>Dataset Collection</h3>
+                <p>Collected the Telco Customer Churn dataset containing 7,043 customer records and 21 original features.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">02</div>
+            <div class="workflow-details">
+                <h3>Data Cleaning & Preprocessing</h3>
+                <p>Converted TotalCharges into numeric format, handled 11 missing values using median imputation and checked duplicate records.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">03</div>
+            <div class="workflow-details">
+                <h3>Exploratory Data Analysis</h3>
+                <p>Studied churn distribution, customer tenure, monthly charges and churn patterns across contract types using visualizations.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">04</div>
+            <div class="workflow-details">
+                <h3>Feature Selection</h3>
+                <p>Applied SelectKBest with mutual information to reduce the feature set from 30 encoded features to 10 important features.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">05</div>
+            <div class="workflow-details">
+                <h3>Feature Scaling & Data Splitting</h3>
+                <p>Applied StandardScaler and divided the dataset into training and testing sets using an 80:20 stratified split.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">06</div>
+            <div class="workflow-details">
+                <h3>Model Training</h3>
+                <p>Implemented Logistic Regression, Decision Tree and Random Forest classification algorithms.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">07</div>
+            <div class="workflow-details">
+                <h3>Hyperparameter Tuning</h3>
+                <p>Used GridSearchCV with 5-fold cross-validation and F1-score to identify suitable model parameters.</p>
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="workflow-number">08</div>
+            <div class="workflow-details">
+                <h3>Ensemble & Model Evaluation</h3>
+                <p>Built a Soft Voting Classifier and compared model performance using accuracy, precision, recall, F1-score and confusion matrices.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 
         <!-- PROBLEM STATEMENT -->
         <section class="churn-section" id="problem">
