@@ -206,3 +206,20 @@
     }
 
 }
+
+/* Google Colab Notebook Section */
+
+.notebook-card {
+    text-align: center;
+    padding: 35px;
+}
+
+.notebook-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.notebook-card p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
